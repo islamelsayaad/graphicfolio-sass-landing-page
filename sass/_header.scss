@@ -1,0 +1,110 @@
+.header {
+  padding: 6rem 1.5rem 12rem;
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1280px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 4.5rem;
+
+    @media (max-width: $tabletScreen) {
+      row-gap: 2.5rem;
+    }
+  }
+
+  &__row-tb {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    align-items: end;
+    column-gap: 3.5rem;
+    width: 100%;
+    height: fit-content;
+
+    @media (max-width: $largeScreen) {
+      grid-template-columns: 1fr;
+      grid-auto-flow: dense;
+      align-items: center;
+    }
+
+    &__col-lt {
+      @media (max-width: $largeScreen) {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    &__col-rt {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.75rem;
+      width: 100%;
+      padding-left: 0.75rem;
+      margin-bottom: 1rem;
+
+      @media (max-width: $largeScreen) {
+        padding-left: 0;
+        margin-bottom: 0;
+      }
+
+      p {
+        color: $grey;
+        width: 100%;
+        max-width: 46rem;
+        font-weight: 400;
+        word-break: keep-all;
+      }
+
+      &__buttons {
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 1.25rem;
+        row-gap: 1.5rem;
+
+        a {
+          @include button();
+          gap: 0.5rem;
+
+          &:first-child {
+            background-color: $black;
+            color: $primaryWhite;
+
+            &:hover {
+              background-color: $orange;
+              border-color: $orange;
+              transform: translate3d(0px, -3px, 0.01px);
+            }
+          }
+
+          @media (max-width: $tabletScreen) {
+            width: 100%;
+          }
+        }
+
+        @media (max-width: $tabletScreen) {
+          flex-direction: column;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__row-bt {
+    width: 100%;
+    max-width: 100vw;
+
+    &__img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @media (max-width: $tabletScreen) {
+    padding-top: 0;
+    padding-bottom: 6rem;
+  }
+}

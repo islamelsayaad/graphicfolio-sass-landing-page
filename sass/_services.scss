@@ -1,0 +1,104 @@
+main {
+  width: 100vw;
+}
+
+.section__wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.services__section {
+  width: 100%;
+  padding: 14rem 1.5rem;
+
+  .section {
+    &__header {
+      margin-bottom: 6rem;
+
+      &__title {
+        h2 {
+          color: $primaryWhite;
+        }
+      }
+
+      &__button {
+        a {
+          background-color: $primaryWhite;
+          border-color: $primaryWhite;
+          color: $black;
+
+          &:hover {
+            color: $primaryWhite;
+            border-color: $black;
+            background-color: $black;
+          }
+        }
+      }
+
+      @media (max-width: $tabletScreen) {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+
+  &__main-content {
+    &__item {
+      padding: 3.75rem 0;
+      border-bottom: 2px solid hsla(0, 0%, 95.3%, 0.2);
+
+      display: grid;
+      grid-template-columns: 6fr 6fr 1fr;
+      column-gap: 3.75rem;
+      row-gap: 1rem;
+      color: $primaryWhite;
+
+      transition: color 300ms ease;
+      cursor: pointer;
+
+      h2 {
+        font-weight: 500;
+      }
+
+      p {
+        max-width: 38rem;
+
+        @media (max-width: $tabletScreen) {
+          max-width: 28rem;
+        }
+      }
+
+      span {
+        font-size: 5rem;
+        justify-self: flex-end;
+        align-self: center;
+      }
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      @media (max-width: $largeScreen) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media (max-width: $tabletScreen) {
+        padding: 3rem 0;
+      }
+
+      &:first-child {
+        padding-top: 0;
+      }
+
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+
+  @media (max-width: $tabletScreen) {
+    padding: 7.5rem 1.5rem;
+  }
+}

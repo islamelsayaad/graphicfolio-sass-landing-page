@@ -1,0 +1,43 @@
+// Onset BOLD
+
+@font-face {
+  font-family: "Onset";
+  src: url("assets/fonts/onest/WOFF/OnestBold1602-hint.woff") format("woff"),
+    url("assets/fonts/onest/WOFF/OnestBold1602-hint.ttf") format("ttf");
+
+  font-style: normal;
+  font-weight: bold;
+}
+
+// Onset MEDIUM
+
+@font-face {
+  font-family: "Onset";
+  src: url("assets/fonts/onest/WOFF/OnestMedium1602-hint.woff") format("woff"),
+    url("assets/fonts/onest/WOFF/OnestMedium1602-hint.ttf") format("ttf");
+
+  font-style: normal;
+  font-weight: 500;
+}
+
+// Onset Regular
+
+@font-face {
+  font-family: "Onset";
+  src: url("assets/fonts/onest/WOFF/OnestRegular1602-hint.woff") format("woff"),
+    url("assets/fonts/onest/WOFF/OnestRegular1602-hint.ttf") format("ttf");
+
+  font-style: normal;
+  font-weight: 400;
+}
+
+// Onset Thin
+
+@font-face {
+  font-family: "Onset";
+  src: url("assets/fonts/onest/WOFF/OnestThin1602-hint.woff") format("woff"),
+    url("assets/fonts/onest/WOFF/OnestThin1602-hint.ttf") format("ttf");
+
+  font-style: normal;
+  font-weight: 300;
+}

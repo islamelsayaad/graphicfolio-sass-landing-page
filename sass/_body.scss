@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Onset", sans-serif;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: $secondaryWhite;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  background-color: $secondaryWhite;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  &__header {
+    margin-bottom: 3rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+
+    &__title {
+      h2 {
+        position: relative;
+        font-weight: 500;
+        max-width: 48rem;
+
+        @media (max-width: $tabletScreen) {
+          max-width: fit-content;
+        }
+      }
+    }
+
+    &__button {
+      a {
+        @include button();
+        padding: 1.5rem 2.5rem;
+
+        &:hover {
+          transform: translate3d(0px, -3px, 0.01px);
+        }
+      }
+
+      @media (max-width: $largeScreen) {
+        display: none;
+      }
+    }
+
+    @media (min-width: $tabletScreen) and (max-width: $mediumScreen) {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.section__wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.header,
+.services__section,
+.agency__section,
+.latest-work__section,
+.process__section,
+.articles__section {
+  padding: 12rem 1.5rem;
+
+  @media (max-width: $tabletScreen) {
+    padding: 6rem 1.5rem;
+  }
+}
+
+.header,
+.agency__section,
+.latest-work__section,
+.process__section,
+.articles__section {
+  background-color: $secondaryWhite;
+}
+
+.services__section {
+  background-color: $orange;
+}
+
+.contact-1__section,
+footer {
+  background-color: $black;
+}
+
+.contact-1__section,
+.contact-2__section {
+  &__main-content {
+    &__col-lt {
+      padding: 4.5rem 1.5rem;
+    }
+  }
+}
+
+footer {
+  padding: 6rem 1.5rem;
+}
+
+h1 {
+  font-size: $heading1;
+
+  @media (min-width: $mobileScreen) and (max-width: $tabletScreen) {
+    font-size: $heading1Medium;
+  }
+
+  @media (max-width: $mobileScreen) {
+    font-size: $heading1Small;
+  }
+}
+
+h2 {
+  font-size: $heading2;
+
+  @media (min-width: $mobileScreen) and (max-width: $tabletScreen) {
+    font-size: $heading2Medium;
+  }
+
+  @media (max-width: $mobileScreen) {
+    font-size: $heading2Small;
+  }
+}
+
+h3 {
+  font-size: $heading3;
+
+  @media (min-width: $mobileScreen) and (max-width: $tabletScreen) {
+    font-size: $heading3Medium;
+  }
+
+  @media (max-width: $mobileScreen) {
+    font-size: $heading3Small;
+  }
+}
+
+p {
+  font-size: $paragraph;
+  line-height: 1.6;
+
+  @media (min-width: $mobileScreen) and (max-width: $tabletScreen) {
+    font-size: $paragraphMedium;
+  }
+
+  @media (max-width: $mobileScreen) {
+    font-size: $paragraphSmall;
+  }
+}
