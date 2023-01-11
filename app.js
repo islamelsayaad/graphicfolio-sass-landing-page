@@ -15,11 +15,7 @@ window.addEventListener("scroll", () => {
   const servicesSectionRect = servicesSection.getBoundingClientRect();
   const footerSectionRect = footerSection.getBoundingClientRect();
 
-  if (
-    servicesSectionRect.top - 500 <=
-    0
-    // && footerSectionRect < document.body.scrollTop
-  ) {
+  if (servicesSectionRect.top - 500 <= 0) {
     navBar.style.opacity = 1;
     navBar.style.visibility = "visible";
   } else {
