@@ -15,7 +15,7 @@ window.addEventListener("scroll", () => {
   const servicesSectionRect = servicesSection.getBoundingClientRect();
   const footerSectionRect = footerSection.getBoundingClientRect();
 
-  if (servicesSectionRect.top - 500 <= 0) {
+  if (servicesSectionRect.top - 500 <= 0 || window.innerWidth < 970) {
     navBar.style.opacity = 1;
     navBar.style.visibility = "visible";
   } else {
@@ -23,3 +23,5 @@ window.addEventListener("scroll", () => {
     navBar.style.visibility = "hidden";
   }
 });
+
+console.log(window.innerWidth);

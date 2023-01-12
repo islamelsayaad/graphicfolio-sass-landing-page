@@ -72,9 +72,10 @@
     z-index: 1;
   }
 
-  @media (max-width: $tabletScreen) {
-    position: relative;
+  @media (max-width: $mediumScreen) {
+    position: absolute;
     top: 1.5rem;
     bottom: 0;
+    width: 90%;
   }
 }
