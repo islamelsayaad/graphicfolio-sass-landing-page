@@ -20,5 +20,11 @@ cd graphicfolio
 ```
 2- Install npm dependencies
 ```
-npm i sass
+npm install -g sass
+npm i live-server
+```
+3- Run app locally
+```
+sass --watch sass/input.scss output.css
+live-server
 ```
