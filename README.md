@@ -4,4 +4,21 @@
 
 ## Overview
 
-Graphicfolio Landing Page built with [Sass](https://sass-lang.com/)
+[Graphicfolio](https://islamelsayyad.github.io/graphicfolio/) Landing Page built with [Sass](https://sass-lang.com/)
+
+## Built with
+
++ Sass
++ Vanilla JavaScript
+
+## Development
+
+1- Clone the repository and change directory.
+```
+git clone https://github.com/islamelsayyad/graphicfolio.git
+cd graphicfolio
+```
+2- Install npm dependencies
+```
+npm i sass
+```
