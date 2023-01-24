@@ -10,6 +10,7 @@
 
 + Sass
 + Vanilla JavaScript
++ HTML5
 
 ## Development
 
