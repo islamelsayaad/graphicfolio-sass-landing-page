@@ -4,7 +4,7 @@
 
 ## Overview
 
-[Graphicfolio](https://islamelsayyad.github.io/graphicfolio/) Landing Page built with [Sass](https://sass-lang.com/)
+[Graphicfolio](https://islamelsayyad.github.io/graphicfolio-landing-page/) Landing Page built with [Sass](https://sass-lang.com/)
 
 ## Built with
 
