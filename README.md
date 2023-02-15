@@ -2,7 +2,8 @@
 
 ## Overview
 
-[Live Preview](https://islamelsayyad.github.io/graphicfolio-sass-landing-page/) landing page built with [sass](https://sass-lang.com/)
+Landing page built with [sass](https://sass-lang.com/)
+[Live Preview](https://islamelsayyad.github.io/graphicfolio-sass-landing-page/)
 
 ## Built with
 
