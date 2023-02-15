@@ -2,7 +2,7 @@
 
 ## Overview
 
-Landing page built with [sass] [Live Preview](https://islamelsayyad.github.io/graphicfolio-sass-landing-page/)
+Landing page built with sass [[Live Preview]](https://islamelsayyad.github.io/graphicfolio-sass-landing-page/)
 
 ## Built with
 
