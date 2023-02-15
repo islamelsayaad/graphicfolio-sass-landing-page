@@ -2,12 +2,12 @@
 
 ## Overview
 
-Landing page built with Sass [[Live Preview]](https://islamelsayyad.github.io/graphicfolio-sass-landing-page/)
+landing page built with Sass [[Live Preview]](https://islamelsayyad.github.io/graphicfolio-sass-landing-page/)
 
 ## Built with
 
 + Sass
-+ Vanilla JavaScript
++ JavaScript
 + HTML5
 
 ## Development
