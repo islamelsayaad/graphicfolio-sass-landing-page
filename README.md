@@ -13,7 +13,7 @@ Graphicfolio Landing page
 
 1- Clone the repository and change directory.
 ```
-git clone https://github.com/islamelsayyad/graphicfolio.git
+git clone https://github.com/mujahedjs/graphicfolio.git
 cd graphicfolio
 ```
 2- Install npm dependencies
